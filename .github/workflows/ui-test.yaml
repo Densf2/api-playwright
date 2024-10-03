@@ -8,6 +8,9 @@ on:
       - "actions-playwright-docker"
       - "!hotfix/*"
       - "!main"
+
+permissions: read-all
+
 jobs:
   test:
     runs-on: ubuntu-latest

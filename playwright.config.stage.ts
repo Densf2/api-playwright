@@ -2,7 +2,7 @@ import { defineConfig, devices } from "@playwright/test";
 // import { configDotenv } from "dotenv";
 
 // configDotenv({ path: `env/.env.${process.env.ENV}` });
-
+/* jscpd:ignore-start */
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
@@ -27,6 +27,7 @@ export default defineConfig({
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [["html"], ["dot"], ["line"]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
+  /* jscpd:ignore-end */
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
     // baseURL: 'http://127.0.0.1:3000',

@@ -1,4 +1,4 @@
-name: Api Tests for dummy webiste
+name: Api Tests for dummy website
 on:
   push:
     branches:
@@ -8,6 +8,9 @@ on:
       - "api-testing"
       - "!hotfix/*"
       - "!main"
+
+permissions: read-all
+
 jobs:
   test:
     runs-on: ubuntu-latest

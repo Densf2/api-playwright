@@ -137,6 +137,7 @@ test.describe("Mark all as completed", () => {
   });
 });
 
+/* jscpd:ignore-start */
 test.describe("Item", () => {
   test("should allow me to mark items as complete", async ({ page }) => {
     // create a new todo locator
@@ -397,6 +398,7 @@ test.describe("Routing", () => {
     await expect(todoItem).toHaveCount(2);
     await expect(todoItem).toHaveText([TODO_ITEMS[0], TODO_ITEMS[2]]);
   });
+  /* jscpd:ignore-end */
 
   test("should respect the back button", async ({ page }) => {
     const todoItem = page.getByTestId("todo-item");
